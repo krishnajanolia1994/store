@@ -1,0 +1,22 @@
+<!--<ul class="heroes">
+    <li *ngFor="let hero of heroes">
+      <a routerLink="/detail/{{hero.id}}">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </a>
+    </li>
+  </ul>-->
+
+<!--<app-hero-detail [hero]="selectedHero"></app-hero-detail>-->
+<div class="card">
+  <p-messages [(value)]="messages" [enableService]="false" />
+</div>
+<p-header><h3> Insert Text</h3></p-header>
+<textarea 
+    rows="15"
+    cols="170" 
+    pInputTextarea 
+    [(ngModel)]="text">
+</textarea>
+<div  style="align-items: center;"><p-button label="Submit" (click)="saveText()"/></div>
+
+
